@@ -1,0 +1,219 @@
+body{background-image: url(../img/魁拔之路/bg.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+header {
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 20px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+	background-color:rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+.nav-header {
+    display: flex;
+    flex-direction: column;
+}
+.navbar-box{
+	display: flex;
+	justify-content: space-around;
+}
+.navbar-logo img{
+	height: 60px;
+	width: 40px;
+	display: flex;
+	margin-top: 10px;
+    opacity: 0.8;
+}
+.navbar-brand {
+	font-family:"宋体";
+    font-size: 30px;
+    font-weight: bold;
+	height:30px;
+	color:#FFF;
+}
+.navbar-brandE {
+	font-family:"Times New Roman";
+    font-size: 15px;
+	font-weight:700;
+	text-align: center;
+}
+.font-special {
+    font-family: 宋体, 新宋体, sans-serif;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    font-weight: 400;
+    margin-left: 15px;
+    transition: all .5s linear;/*元素过渡*/
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+header ul li:hover {
+    background: #497271;
+    color: #2b1055;
+}
+
+header ul li.active {
+    background:#497271;
+    color: #2b1055;
+}
+a:link,a:visited{
+	color:#FFF;
+	text-decoration:none;
+}
+
+* {box-sizing: border-box;}
+.block-content{
+    height: 580px;
+	background-color:rgba(0, 0, 0, 0);
+}
+
+.info-content {
+    background-color: #497271;
+    width: 1200px;
+    height: 400px;
+    margin: 20vh 14vh;
+    justify-content: space-around;/* 均匀排列每个元素周围分配相同的空间 */
+    align-items: center;
+	position:absolute;
+}
+
+.block-content p {
+    margin: 25px 25px 25px 25px;
+}
+
+.text_communist {/* 卡片头 */
+    color: white;
+    font-size: 40px;
+    margin-top: -20px;
+    position: relative;
+    top: -5px;
+	z-index:99;
+}
+
+.text_content {/* 卡片主体 */
+    color: #ccc;
+    font-size: 12px;
+    line-height: 2;
+	z-index:99;
+}
+
+p.line {
+    background-color: white;
+    height: 3px;
+    margin: 0 25px;
+    position: relative;
+    top: -5%;
+    width: 53%;
+}
+
+img.info-photo {
+	width:80vh ;
+    height: 40vh;
+    margin-left:900px;
+	margin-top:80px;
+	position:absolute;
+	z-index:6;
+}
+
+
+
+table{
+    margin:auto;
+    margin-bottom: 30px;
+	background-color:rgba(0, 0, 0, 0.4);
+    
+}
+tr td{
+    text-align: center;
+}
+
+
+
+
+
+.beautiful{
+	margin:40px;
+	background-color:rgba(0, 0, 0, 0.4);
+}
+.blockone-bottom{
+	background-color:rgba(0, 0, 0, 0.4);
+	height: 80px;
+	/*border:1px solid #FFF ;*/
+	 	}
+.blockone-bottom>li{
+	width: 195px;
+	height: 96px;
+	float: left;
+	margin-left: 12px;
+	margin-bottom: 10px;
+	list-style:none;
+}
+.blockone-bottom>li a{
+	width: 96px;
+	height: 30px;
+	line-height: 30px;
+	background:  #497271;
+	color:#FFF;
+	border-radius: 0 0 6px 0;
+	box-shadow: 0 2px 2px #FFFFFF;
+}
+.blockone-bottom>li a:hover{
+	width: 96px;
+	height: 30px;
+	line-height: 30px;
+	background:  #497271;
+	color:#FFF;
+	border-radius: 0 0 6px 0;
+	box-shadow: 0 2px 2px #666;
+}
+
+
+
+
+
+footer{
+    background-color: rgb(43, 54, 54);
+    display: flex;
+    justify-content: space-around;
+}
+.introduceL{
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    margin-left:-16vw;
+}
+.introduceR{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right:2vh;
+	text-decoration:none;
+}
+.introduceL p{
+    color:white;
+}
+
+.introduceR a{
+    color:white;
+}
+.introduceR a:link,introduceR a:visited{
+	color:#FFF;
+	text-decoration:none;
+}
+.introduceR a:hover{
+	color:#497271;
+}

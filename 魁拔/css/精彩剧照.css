@@ -1,0 +1,168 @@
+header {
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 20px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(76, 76, 76);
+    overflow: hidden;
+	background-color:rgba(0, 0, 0, 0.1);
+}
+.nav-header {
+    display: flex;
+    flex-direction: column;
+}
+.navbar-box{
+	display: flex;
+	justify-content: space-around;
+}
+.navbar-logo img{
+	height: 60px;
+	width: 40px;
+	display: flex;
+	margin-top: 10px;
+	opacity: 0.8;
+}
+.navbar-brand {
+	font-family:"宋体";
+    font-size: 30px;
+    font-weight: bold;
+	height:30px;
+	color: rgb(76, 76, 76);
+}
+.navbar-brandE {
+	font-family:"Times New Roman";
+    font-size: 15px;
+	font-weight:700;
+	text-align: center;
+}
+.font-special {
+    font-family: 宋体, 新宋体, sans-serif;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    font-weight: 400;
+    margin-left: 15px;
+    transition: all .5s linear;/*元素过渡*/
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+header ul li:hover {
+    background: #497271;
+    color: #2b1055;
+}
+
+header ul li.active {
+    background:#497271;
+    color: #2b1055;
+}
+a:link,a:visited{
+	color: rgb(76, 76, 76);
+	text-decoration:none;
+}
+
+audio{
+    display: block;
+    background: rgb(255, 255, 255);
+    margin:0 45% 0 ;
+}
+
+section {
+    height: 100vh;
+    color:#FFF;
+    font-size: 20vh;
+}
+.a{
+    font-family: 宋体;
+    line-height: 100vh;
+	text-align: center;
+}
+.poetry{
+    background-image: url(../img/精彩剧照/花痴诗.jpg);
+    background-size: 100%;
+	background-repeat: no-repeat;
+}
+.g-img1 {
+    background-image:url(../img/精彩剧照/涡流岛.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.g-img2 {
+    background-image:url(../img/精彩剧照/谐脉阵.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.g-img3 {
+    background-image:url(../img/精彩剧照/脉兽.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.g-img4 {
+    background-image:url(../img/精彩剧照/一半的一半...的一半.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.g-img5 {
+    background-image:url(../img/精彩剧照/魁拔之敌.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.g-img6{
+    background-image:url(../img/精彩剧照/向前！一直向前！.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.g-img7{
+    background-image:url(../img/精彩剧照/冲天槊.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+footer{
+    background-color: rgb(43, 54, 54);
+    display: flex;
+    justify-content: space-around;
+}
+.introduceL{
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    margin-left:-16vw;
+}
+.introduceR{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right:2vh;
+	text-decoration:none;
+}
+.introduceL p{
+    color:white;
+}
+
+.introduceR a{
+    color:white;
+}
+.introduceR a:link,introduceR a:visited{
+	color:#FFF;
+	text-decoration:none;
+}
+.introduceR a:hover{
+	color:#497271;
+}

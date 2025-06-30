@@ -1,0 +1,116 @@
+*{
+    box-sizing:border-box;
+}
+div{
+    display: block;
+}
+body {
+    background: url(../img/index/bg.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 800px;
+    height: 480px;
+    max-width: 100%;
+    min-height: 480px;
+    margin: 5% auto 0 auto;
+}
+button {
+    outline:none;/*无边框*/
+}
+h1 {
+    font-weight: bold;
+    margin-top: 10%;
+}
+form {
+    background: #fff;
+    display: flex;
+    flex-direction: column;/*作为列，垂直地显示弹性项目*/
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+input {
+    background: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    outline: none;
+}
+a {
+    color: black;
+    font-size: 15px;
+    text-decoration: none;/*隐藏下划线*/
+    margin: 20px 0;
+}
+.Login_div {
+    background: #fff;
+    width: 50%;
+    height: 100%;
+    opacity: 1;
+    text-align: center;
+}
+.Options_div {
+    background: #fff;
+    background-color: #44bfd2;
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+}
+.Options_div span{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.Options_div button{
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 5px;
+    margin-top: 8%;
+}
+.Registered_div {
+    background: #fff;
+    width: 0;
+    height: 100%;
+    opacity: 0;
+}
+.Registered_div .submit_button{
+    margin-top: 5%;
+}
+.eneter{
+    margin-top: 10%;
+}
+.submit_button {
+    border-radius: 20px;
+    border: 1px solid #3852d4;
+    background: #3852d4;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 5px;
+}
+#Switch_Registered{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+#Switch_Login{
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+}

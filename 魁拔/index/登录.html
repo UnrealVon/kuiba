@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/登录.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../js/登录.js"></script>
+    <title>登录/注册</title>
+    <script>
+	$(function(){
+        /*animate()方法设置透明度opacity变化
+        通过使用滑动效果slideUp()，隐藏被选元素，如果元素已显示出来的话。
+        通过使用滑动效果slideDown()，显示被选元素，如果元素已被隐藏的话。*/
+		$("#Registered_button").click(function(){
+			$(".Login_div").animate({width:"0",opacity:"0"});//隐藏界面
+			$(".Registered_div").animate({width:"50%",opacity:"1"});//显示界面
+			$("#Switch_Registered").animate({opacity:"0"});
+			$("#Switch_Login").animate({opacity:"1"});
+			$("#Switch_Registered").slideUp();
+			$("#Switch_Login").slideDown();
+		});
+	
+		$("#Login_button").click(function(){
+			$(".Registered_div").animate({width:"0",opacity:"0"});//隐藏界面
+			$(".Login_div").animate({width:"50%",opacity:"1"});//显示界面
+			$("#Switch_Login").animate({opacity:"0"});
+			$("#Switch_Registered").animate({opacity:"1"});
+			$("#Switch_Login").slideUp();
+			$("#Switch_Registered").slideDown();
+		});
+	});
+
+    function login(){
+    var user=login0.Account.value;
+    var userpwd=login0.userpwd.value;
+    
+    if (user=="kuiba"&&userpwd=="123456") {
+        alert("登录成功");
+        return true;
+    } else {
+        alert("登录失败,请查验账号和密码");
+        return false;
+    }
+}
+    $(document).ready(function(){
+        $("#register").bind("click",function(){
+            if ($("#name").val()==""||$("#name").val()==null){
+                    alert("账号不能为空");
+                    return false;
+            }
+            if ($("#pwd").val()==""||$("#pwd").val()==null){
+                    alert("密码不能为空");
+                    return false;
+            }
+            if ($("#confirm_pwd").val()==""||$("#confirm_pwd").val()==null){
+                    alert("确认密码不能为空");
+                    return false;
+            }
+            if($("#confirm_pwd").val()==$("#pwd").val()){
+            }else{
+                alert("两次密码不一致！");
+                return false;
+            }
+            alert("正在注册！")
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="Login_div">
+            <form action="./index.html" name="login0">
+                <h1>登录</h1>
+                <span>请登录您的账号</span>
+                <div class="eneter">
+                    <input name="Account" type="text" placeholder="账号:kuiba">
+                    <input name="userpwd" type="password" placeholder="密码:123456">
+                </div>
+                <a href="./忘记密码.html">忘记密码？</a>
+                <input type="submit" class="submit_button" onclick="return login()" value="登录"></input>
+            </form>
+        </div>
+        <div class="Options_div">
+            <div id="Switch_Registered">
+                <p><img src="../img/logo.png" alt="logo"></p>
+                <h1>还没有账号？</h1>
+                <p>立即注册</p>
+                <button id="Registered_button">前往注册</button>
+            </div>
+            <div id="Switch_Login">
+                <p><img src="../img/logo.png" alt="logo"></p>
+                <h1>已有账号？</h1>
+                <p>请使用您的帐号进行登录</p>
+                <button id="Login_button">前往登录</button>
+            </div>
+        </div>
+        <div class="Registered_div">
+            <form action="mailto:2902391092@qq.com"enctype="text">
+                <h1>注册</h1>
+                <span>注册您的账号</span>
+                <div class="eneter">
+                    <input id="name" name="number" type="text" placeholder="账号">
+                    <input id="pwd" name="password" type="password" placeholder="密码">
+                    <input id="confirm_pwd" name="confirm_password" type="password" placeholder="确认密码">
+                </div>
+                <button class="submit_button" id="register">注册</button>
+            </form>
+    </div>
+</body>
+</html>
